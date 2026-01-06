@@ -27,6 +27,6 @@ class Pruner < Formula
   end
 
   def install
-    bin.install "pruner"
+    bin.install Dir["pruner-*"].first => "pruner"
   end
 end
